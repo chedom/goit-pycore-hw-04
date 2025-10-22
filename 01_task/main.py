@@ -8,7 +8,7 @@ def calculate_total_salary(path: str) -> tuple[int, float]:
             if not line: # end of file
                 break
 
-            parts = line.split(',')
+            parts = line.strip().split(',')
             if len(parts) < 2: # line doesnt satisfy expected format
                 print(f"Line {line} has unexpected format")
                 continue
