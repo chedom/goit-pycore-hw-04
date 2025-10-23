@@ -1,6 +1,8 @@
 import sys
 from pathlib import Path
-from colorama import Fore
+from colorama import Fore 
+
+# virtual environment is created for the whole repo
 
 def print_folder_content(path: Path, identation = 0):
     name = path.name
